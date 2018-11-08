@@ -1,14 +1,18 @@
 package com.yty.monica.entity;
 
+import com.yty.monica.enums.Gender;
+
+/**
+ * Person实体类
+ */
 public class Person {
 
     private int id;
     private String name;
     private String pwd;
-    private String gender;
+    private Gender gender;
     private String location;
     private String home;
-
 
     public int getId() {
         return id;
@@ -34,11 +38,11 @@ public class Person {
         this.pwd = pwd;
     }
 
-    public String getGender() {
+    public Gender getGender() {
         return gender;
     }
 
-    public void setGender(String gender) {
+    public void setGender(Gender gender) {
         this.gender = gender;
     }
 
@@ -57,6 +61,5 @@ public class Person {
     public void setHome(String home) {
         this.home = home;
     }
-
-
 }
+
